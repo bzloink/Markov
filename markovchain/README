@@ -1,0 +1,15 @@
+Order-2 Markov chain program
+by Andrew M. Launder
+
+This program uses an order-2 Markov chain algorithm to produce a
+semi-intelligible gibberish story given a sizable input of text.
+
+Once you've compiled the program, enter the following into the command line:
+
+    path/to/executable/markovchain [wordcount (optional; default = 100)] [inputfile]
+    
+    [wordcount]: the number of words you wish to print.
+                 Must be greater than 0 and less than 10000.
+    
+    [inputfile]: the name of your input file. To ensure best results, 
+                 make sure that your input file contains no empty lines.

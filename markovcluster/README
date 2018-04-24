@@ -1,0 +1,40 @@
+Markov clustering algorithm
+by Andrew M. Launder
+    
+This program takes a given transition matrix and runs the Markov clustering
+algorithm to cluster the data.
+
+Once you've compuled the program, enter the following into the command line:
+    
+    path/to/executable/markovcluster [inputfile]
+    
+    [inputfile]: the name of your input file. To ensure best results,
+                 make sure that your input file contains a transition matrix
+                 of at least 2 x 2 size with the following format:
+    
+                 x[1][1] x[1][2] . . . x[1][n]
+                 x[2][1] x[2][2] . . . x[2][n]
+                    .       .    .        .   
+                    .       .      .      .   
+                    .       .        .    .   
+                 x[n][1] x[n][2] . . . x[n][n]
+
+                 (where x[i][j] is the numerical value of the (i, j) element
+                  of the matrix, and n is the order).
+
+If you would like to use values other than the defaults,
+enter the following into the command line:
+    
+    path/to/executable/markovcluster [convexp] [maxiter] [inflation] [zeroconvexp] [inputfile]
+    
+    [convexp]: the convergence criterion for the RMS of the transition matrix elements,
+               defined as 10^-x, where x is convexp. Default value is 6.
+    
+    [maxiter]: the maximum number of iterations. Default value is 100.
+    
+    [inflation]: the power used in the inflation step. Default value is 2.
+    
+    [zeroconvexp]: the threshold for setting a given matrix element to 0,
+                   defined as 10^-x, where x is zeroconvexp. Default value is 15.
+    
+    [inputfile]: as described above.
