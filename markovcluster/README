@@ -4,9 +4,9 @@ by Andrew M. Launder
 This program takes a given transition matrix and runs the Markov clustering
 algorithm to cluster the data.
 
-Once you've compuled the program, enter the following into the command line:
+Once you've compiled the program, enter the following into the command line:
     
-    path/to/executable/markovcluster [inputfile]
+    path/to/executable/markovcluster.exe [inputfile]
     
     [inputfile]: the name of your input file. To ensure best results,
                  make sure that your input file contains a transition matrix
