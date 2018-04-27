@@ -93,7 +93,7 @@ void PrintMatrix(std::vector<std::vector<double>> matrix, unsigned long int dim)
 int MatrixCheck(std::vector<std::vector<double>> matrix, unsigned long int dim) {
  /* Returns 2 if input file has been specified incorrectly.
     Returns 1 if matrix is not square.
-    Returns 0 otherwise.                                    */
+    Returns 0 otherwise. */
     int matrixcheck = 0;
     
     if (dim == 1) {
@@ -215,7 +215,7 @@ std::vector<std::vector<double>> MakeZero(std::vector<std::vector<double>> initi
 
 int ConvCheck(std::vector<std::vector<double>> newmatrix, std::vector<std::vector<double>> oldmatrix, double conv, unsigned long int dim) {
  /* Returns 1 if RMS of transition matrix elements not yet converged.
-    Returns 0 otherwise.                                              */
+    Returns 0 otherwise. */
     int convcheck = 1;
     double RMS = 0;
     

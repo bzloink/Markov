@@ -73,7 +73,7 @@ unsigned long int NWords(char* filename, unsigned long int nlines) {
 std::vector<std::vector<std::string>> MarkovData(char* filename, unsigned long int nlines, unsigned long int nwords) {
  /* Parse data into vector of vectors containing every iteration of
     three consecutive words. Make sure all empty lines are removed from
-    input text.                                                         */
+    input text. */
     std::ifstream text(filename);
     
     if (!text) {
